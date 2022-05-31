@@ -5,34 +5,37 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Lagoona</title>
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
   <header class="header">
-    <div class="container">
-      <div class="section-logo">
-        <a href="" class="logo">
-          <img src="/img/logo.svg" alt="" class="logo-img">
-        </a>
-        <div class="header-phone">
-          <a href="tel:+74953225448">+7 495 322 54-48</a>
+    <div class="container header-container">
+      <div class="section-header-up">
+        <div class="section-logo">
+          <a href="" class="logo">
+            <img src="/img/logo.svg" alt="Лагуна - сеть отелей" class="logo-img">
+          </a>
+          <span class="header-phone">
+            <a href="tel:+74953225448">+7 495 322 54-48</a>
+          </span>
+        </div>
+        <div class="section-login">
+          <a href="" class="login-link">
+            <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.59 7.41L15.17 11H1V13H15.17L11.58 16.59L13 18L19 12L13 6L11.59 7.41ZM20 6V18H22V6H20Z"
+                fill="#CC9933" />
+            </svg>
+            <span class="login-link-text">
+              Личный кабинет
+            </span>
+          </a>
         </div>
       </div>
-      <div class="section-login">
-        <a href="" class="login-link">
-          <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11.59 7.41L15.17 11H1V13H15.17L11.58 16.59L13 18L19 12L13 6L11.59 7.41ZM20 6V18H22V6H20Z"
-              fill="#CC9933" />
-          </svg>
-          <span class="login-link-text">
-            Личный кабинет
-          </span>
-        </a>
-      </div>
-      <div class="section-header">
-        <nav class="nav">
+      <div class="section-header-down">
+        <nav class="nav nav-header">
           <ul class="nav-list">
             <li class="nav-item">
               <a href="" class="nav-link">О нас</a>
@@ -54,80 +57,82 @@
             </li>
           </ul>
         </nav>
-        <div class="header-btn-section">
-          <ul class="header-btn-list">
-            <li class="header-btn-item">
-              <button class="btn header-btn">
-                Хочу тур
-              </button>
-            </li>
-            <li class="header-btn-item">
-              <button class="btn header-btn">
-                Обратный звонок
-              </button>
-            </li>
-          </ul>
-        </div>
+          <div class="header-btn-section">
+            <ul class="header-btn-list">
+              <li class="header-btn-item">
+                <button class="btn header-btn">
+                  Хочу тур
+                </button>
+              </li>
+              <li class="header-btn-item">
+                <button class="btn header-btn">
+                  Обратный звонок
+                </button>
+              </li>
+            </ul>
+          </div>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="section-promotional">
-      <div class="container">
+    <div class="container">
+      <section class="section-promotional">
         <h2 class="section-header">
           Спецпредложения
         </h2>
-        <article class="promotional-item">
-          <a href="" class="promotional-link">
-            <img src="/img/maldives1.png" alt="Шезлонги у бассейна на фоне океана" class="promotional-pic">
-            <h3 class="promotional-heading">
-              Мальдивские острова
-            </h3>
-            <div class="promotional-price">
-              от 55 000 р
-            </div>
-            <span class="promotional-showmore-text">Подробнее</span>
-            <svg width="10" height="18" viewbox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0.778175 1.00002L8.55635 8.7782L0.778175 16.5564" stroke="#CC9933" stroke-width="2" />
-            </svg>
-          </a>
-        </article>
-        <article class="promotional-item">
-          <a href="" class="promotional-link">
-            <img src="/img/crete1.png" alt="Девушка загорает у бассейна" class="promotional-pic">
-            <h3 class="promotional-heading">
-              Горящий тур на остров Крит
-            </h3>
-            <div class="promotional-price">
-              от 30 000 р
-            </div>
-            <span class="promotional-showmore-text">Подробнее</span>
-            <svg width="10" height="18" viewbox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0.778175 1.00002L8.55635 8.7782L0.778175 16.5564" stroke="#CC9933" stroke-width="2" />
-            </svg>
-          </a>
-        </article>
-        <article class="promotional-item-large">
-          <a href="" class="promotional-link-large">
-            <img src="/img/luxroom.png" alt="Дорогой диван с подушками" class="promotional-pic">
-            <h3 class="promotional-heading-large">
-              Номера категории люкс
-            </h3>
-            <div class="promotional-price-large">
-              от 5 000 р
-            </div>
-            <span class="promotional-showmore-text-large">Подробнее</span>
-            <svg width="10" height="18" viewbox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0.778175 1.00002L8.55635 8.7782L0.778175 16.5564" stroke="#CC9933" stroke-width="2" />
-            </svg>
-          </a>
-        </article>
-      </div>
-    </section>
+        <div class="promotional-articules-section">
+          <article class="promotional-item">
+            <a href="" class="promotional-link">
+              <span class="promotional-pic"></span>
+              <h3 class="promotional-heading">
+                Мальдивские острова
+              </h3>
+              <div class="promotional-price">
+                от 55 000 р
+              </div>
+              <span class="promotional-showmore-text">Подробнее</span>
+              <svg width="10" height="18" viewbox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.778175 1.00002L8.55635 8.7782L0.778175 16.5564" stroke="#CC9933" stroke-width="2" />
+              </svg>
+            </a>
+          </article>
+          <article class="promotional-item">
+            <a href="" class="promotional-link">
+              <span class="promotional-pic"></span>
+              <h3 class="promotional-heading">
+                Горящий тур на остров Крит
+              </h3>
+              <div class="promotional-price">
+                от 30 000 р
+              </div>
+              <span class="promotional-showmore-text">Подробнее</span>
+              <svg width="10" height="18" viewbox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.778175 1.00002L8.55635 8.7782L0.778175 16.5564" stroke="#CC9933" stroke-width="2" />
+              </svg>
+            </a>
+          </article>
+          <article class="promotional-item">
+            <a href="" class="promotional-link">
+              <span class="promotional-pic"></span>
+              <h3 class="promotional-heading">
+                Номера категории люкс
+              </h3>
+              <div class="promotional-price">
+                от 5 000 р
+              </div>
+              <span class="promotional-showmore-text">Подробнее</span>
+              <svg width="10" height="18" viewbox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.778175 1.00002L8.55635 8.7782L0.778175 16.5564" stroke="#CC9933" stroke-width="2" />
+              </svg>
+            </a>
+          </article>
+        </div>
+      </section>
+    </div>
 
-    <section class="section-about">
-      <div class="container">
+    <div class="container">
+      <section class="section-about">
         <h2 class="section-header">
           О нас
         </h2>
@@ -138,17 +143,17 @@
           эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным образом сложившаяся
           структура организации требуют определения и уточнения существенных финансовых и административных условий.
         </p>
-      </div>
-    </section>
+      </section>
+    </div>
 
-    <section class="section-services">
-      <div class="container">
+    <div class="container">
+      <section class="section-services">
         <h2 class="section-header">
           Услуги
         </h2>
         <ul class="services-list">
           <li class="services-item">
-            <img src="/img/champagne-glasses.png" alt="Два бокала с шампанским" class="services-pic">
+            <span class="services-pic"></span>
             <div class="services-description">
               <a href="" class="services-link">
                 <span class="services-link-text">
@@ -159,12 +164,12 @@
                 </svg>
               </a>
               <p class="plain-text">
-                Равным образом постоянный количественный рост и сфера нашей активность
+                Равным образом постоянный количественный рост и сфера нашей активности
               </p>
             </div>
           </li>
           <li class="services-item">
-            <img src="/img/served-table.png" alt="Сервированный стол" class="services-pic">
+            <span class="services-pic"></span>
             <div class="services-description">
               <a href="" class="services-link">
                 <span class="services-link-text">
@@ -180,7 +185,7 @@
             </div>
           </li>
           <li class="services-item">
-            <img src="/img/pool.png" alt="Крытый бассейн" class="services-pic">
+            <span class="services-pic"></span>
             <div class="services-description">
               <a href="" class="services-link">
                 <span class="services-link-text">
@@ -196,7 +201,7 @@
             </div>
           </li>
           <li class="services-item">
-            <img src="/img/cars.png" alt="Бампера винтажных машин" class="services-pic">
+            <span class="services-pic"></span>
             <div class="services-description">
               <a href="" class="services-link">
                 <span class="services-link-text">
@@ -212,11 +217,11 @@
             </div>
           </li>
         </ul>
-      </div>
-    </section>
+      </section>
+    </div>
 
-    <section class="section-benefits">
-      <div class="container">
+    <div class="container">
+      <section class="section-benefits">
         <h2 class="section-header">
           Преимущества
         </h2>
@@ -270,11 +275,11 @@
             </p>
           </li>
         </ul>
-      </div>
-    </section>
+      </section>
+    </div>
 
-    <section class="section-accommodation">
-      <div class="container">
+    <div class="container">
+      <section class="section-accommodation">
         <h2 class="section-header">
           Размещение
         </h2>
@@ -285,9 +290,9 @@
               <span class="gray-text">
                 от
               </span>
-              <strong class="price-per-night">
+              <span class="price-per-night">
                 4 698 р
-              </strong>
+              </span>
               <span class="plain-text">
                  / ночь
                 </span>
@@ -299,9 +304,9 @@
               <img src="/img/star.svg" alt="" class="accommodation-rating-pic">
               <img src="/img/star_empty.svg" alt="" class="accommodation-rating-pic">
             </div>
-            <div class="plain-text">
+            <strong class="hotel-name-text">
               Lagoona española
-            </div>
+            </strong>
             <div class="gray-text">
               Барселона, Испания
             </div>
@@ -317,9 +322,9 @@
               <span class="gray-text">
                 от
               </span>
-              <strong class="price-per-night">
+              <span class="price-per-night">
                 5 148 р
-              </strong>
+              </span>
               <span class="plain-text">
                  / ночь
                 </span>
@@ -331,9 +336,9 @@
               <img src="/img/star.svg" alt="" class="accommodation-rating-pic">
               <img src="/img/star_empty.svg" alt="" class="accommodation-rating-pic">
             </div>
-            <div class="plain-text">
+            <strong class="hotel-name-text">
               Lagoona son tipicas
-            </div>
+            </strong>
             <div class="gray-text">
               Барселона, Испания
             </div>
@@ -349,9 +354,9 @@
               <span class="gray-text">
                 от
               </span>
-              <strong class="price-per-night">
+              <span class="price-per-night">
                 6 254 р
-              </strong>
+              </span>
               <span class="plain-text">
                  / ночь
                 </span>
@@ -363,9 +368,9 @@
               <img src="/img/star.svg" alt="" class="accommodation-rating-pic">
               <img src="/img/star.svg" alt="" class="accommodation-rating-pic">
             </div>
-            <div class="plain-text">
+            <strong class="hotel-name-text">
               Lagoona de la guerra
-            </div>
+            </strong>
             <div class="gray-text">
               Барселона, Испания
             </div>
@@ -381,9 +386,9 @@
               <span class="gray-text">
                 от
               </span>
-              <strong class="price-per-night">
+              <span class="price-per-night">
                 6 320 р
-              </strong>
+              </span>
               <span class="plain-text">
                  / ночь
                 </span>
@@ -395,9 +400,9 @@
               <img src="/img/star.svg" alt="" class="accommodation-rating-pic">
               <img src="/img/star.svg" alt="" class="accommodation-rating-pic">
             </div>
-            <div class="plain-text">
+            <strong class="hotel-name-text">
               Lagoona mentira piadosa
-            </div>
+            </strong>
             <div class="gray-text">
               Барселона, Испания
             </div>
@@ -413,9 +418,9 @@
               <span class="gray-text">
                 от
               </span>
-              <strong class="price-per-night">
+              <span class="price-per-night">
                 6 457 р
-              </strong>
+              </span>
               <span class="plain-text">
                  / ночь
                 </span>
@@ -427,9 +432,9 @@
               <img src="/img/star.svg" alt="" class="accommodation-rating-pic">
               <img src="/img/star_empty.svg" alt="" class="accommodation-rating-pic">
             </div>
-            <div class="plain-text">
+            <strong class="hotel-name-text">
               Lagoona empujar la creatividad
-            </div>
+            </strong>
             <div class="gray-text">
               Барселона, Испания
             </div>
@@ -445,9 +450,9 @@
               <span class="gray-text">
                 от
               </span>
-              <strong class="price-per-night">
+              <span class="price-per-night">
                 6 320 р
-              </strong>
+              </span>
               <span class="plain-text">
                  / ночь
                 </span>
@@ -459,9 +464,9 @@
               <img src="/img/star.svg" alt="" class="accommodation-rating-pic">
               <img src="/img/star_empty.svg" alt="" class="accommodation-rating-pic">
             </div>
-            <div class="plain-text">
+            <strong class="hotel-name-text">
               Lagoona el retorno
-            </div>
+            </strong>
             <div class="gray-text">
               Барселона, Испания
             </div>
@@ -477,9 +482,9 @@
               <span class="gray-text">
                 от
               </span>
-              <strong class="price-per-night">
+              <span class="price-per-night">
                 6 505 р
-              </strong>
+              </span>
               <span class="plain-text">
                  / ночь
                 </span>
@@ -491,9 +496,9 @@
               <img src="/img/star.svg" alt="" class="accommodation-rating-pic">
               <img src="/img/star.svg" alt="" class="accommodation-rating-pic">
             </div>
-            <div class="plain-text">
+            <strong class="hotel-name-text">
               Lagoona mentira piadosa
-            </div>
+            </strong>
             <div class="gray-text">
               Барселона, Испания
             </div>
@@ -509,9 +514,9 @@
               <span class="gray-text">
                 от
               </span>
-              <strong class="price-per-night">
+              <span class="price-per-night">
                 6 824 р
-              </strong>
+              </span>
               <span class="plain-text">
                  / ночь
                 </span>
@@ -523,9 +528,9 @@
               <img src="/img/star.svg" alt="" class="accommodation-rating-pic">
               <img src="/img/star_empty.svg" alt="" class="accommodation-rating-pic">
             </div>
-            <div class="plain-text">
+            <strong class="hotel-name-text">
               Lagoona suerte siguió siempre
-            </div>
+            </strong>
             <div class="gray-text">
               Барселона, Испания
             </div>
@@ -551,8 +556,9 @@
             </a>
           </li>
         </ul>
-      </div>
-    </section>
+      </section>
+    </div>
+
   </main>
 </body>
 

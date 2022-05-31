@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* .btn {
+  padding: 13px 20px;
+  min-width: 100px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #CC9933;
+  background-color: transparent;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+  cursor: pointer;
+} */
+
+/* Header */
+/* .header {
+  height: 154px;
+} */
+
+.header-container {
+  margin-bottom: 40px;
+}
+
+.section-header-up {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-bottom: 30px;
+}
+
+.section-logo {
+  margin-right: auto;
+}
+
+/* .header-phone {
+  margin-left: 40px;
+} */
+
+.section-header-down {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-header {
+  margin-right: auto;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  padding-right: 56px;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.header-btn-list {
+  display: flex;
+  align-items: center;
+  padding-left: 57px;
+}
+
+.header-btn-item:not(:last-child) {
+  margin-right: 3px;
+}
+
+/* .header-btn-item:last-child {
+  margin-right: 45px;
+} */
+
+/* Promotions */
+.promotional-articules-section {
+  display: flex;
+  max-height: 200px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/* About Us */
+
+/* Services */
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 35px;
+  flex: 1 1 50%;
+}
+
+.services-item {
+  width: 50%;
+}
+
+/* Benefits */
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 35px;
+  flex: 1 1 25%;
+}
+
+.benefits-item {
+  width: 25%;
+}
+
+/* Accommodation */
+.accommodation-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* height: 1000px; */
+  margin-top: 35px;
+  flex: 1 1 33.3%;
+}
+
+.accommodation-item {
+  width: 33.3%;
+}
+
+.hotel-name-text {
+  line-height: 3em;
+}
+
+.gray-text {
+  padding-bottom: 20px;
+}
