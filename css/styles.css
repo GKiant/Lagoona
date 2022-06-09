@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'Muller';
   src: url(../fonts/MullerBold.woff);
-  src: url(../fonts/MullerBold.woff2);
   font-display: swap;
   font-weight: 700;
   font-style: normal;
@@ -10,7 +9,6 @@
 @font-face {
   font-family: 'Muller';
   src: url(../fonts/MullerMedium.woff);
-  src: url(../fonts/MullerMedium.woff2);
   font-display: swap;
   font-weight: 500;
   font-style: normal;
@@ -19,7 +17,6 @@
 @font-face {
   font-family: 'Muller';
   src: url(../fonts/MullerRegular.woff);
-  src: url(../fonts/MullerRegular.woff2);
   font-display: swap;
   font-weight: 400;
   font-style: normal;
@@ -28,7 +25,6 @@
 @font-face {
   font-family: 'Muller';
   src: url(../fonts/MullerLight.woff);
-  src: url(../fonts/MullerLight.woff2);
   font-display: swap;
   font-weight: 300;
   font-style: normal;
@@ -245,7 +241,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .promotional-item-crete {
-  /* display: inline-block; */
   background: url('/img/crete1.png');
   background-size: contain;
   width: 573px;
@@ -253,7 +248,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .promotional-item-lux {
-  /* display: inline-block; */
   background: url('/img/luxroom.png');
   background-size: contain;
   width: 573px;
@@ -360,7 +354,6 @@ input[type=number]::-webkit-outer-spin-button {
   width: 572px;
   background-color: white;
   border-radius: 15px;
-  /* margin: 23px; */
 }
 
 .services-item:first-child {
@@ -406,7 +399,6 @@ input[type=number]::-webkit-outer-spin-button {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 35px;
-  /* flex: 1 1 25%; */
 }
 
 .benefits-item {
@@ -505,7 +497,6 @@ input[type=number]::-webkit-outer-spin-button {
 .accommodation-list {
   display: flex;
   flex-wrap: wrap;
-  /* align-items: center; */
   justify-content: space-between;
   margin-top: 35px;
   flex: 1 1 33.3%;
@@ -516,10 +507,6 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: #FFF;
   border-radius: 15px;
 }
-
-/* .accommodation-item:not(:nth-child(7)):not(:nth-child(8)):not(:nth-child(9)) {
-  margin-bottom: 23px;
-} */
 
 .accommodation-item {
   margin-bottom: 22px;
@@ -783,6 +770,120 @@ input[type=number]::-webkit-outer-spin-button {
   color: #CC9933;
 }
 
+/* Footer */
+.footer-container {
+  position: relative;
+  margin-bottom: 20px;
+  width: 1170px;
+  padding: 51px 51px 0 52px;
+  background-color: #333;
+  border-radius: 15px;
+}
+
+.container-user-agreement {
+  display: flex;
+}
+
+.footer-container-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-user-agreement-text {
+  max-width: 320px;
+  margin-right: 102px;
+}
+
+.user-agreement-text {
+  display: block;
+  margin-bottom: 37px;
+}
+
+.footer-text {
+  font-size: 16px;
+  line-height: 30.4px;
+  font-weight: 400;
+  color: #FFF;
+}
+
+.footer-link {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #CC9933;
+}
+
+.footer-user-agreement-link {
+  margin-bottom: 46px;
+}
+
+.footer-contacts-text {
+  display: block;
+  margin-bottom: 14px;
+}
+
+.contacts-container-phones {
+  margin-bottom: 15px;
+}
+
+.footer-contacts-link {
+  display: block;
+}
+
+.footer-social-media-list {
+  margin: 0 0 0 auto;
+}
+
+.social-media-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.social-media-icon-hz {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url('/img/unknown_sm_icon.svg') center center no-repeat transparent;
+  background-size: contain;
+}
+
+.social-media-icon-twitter {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url('/img/twitter.svg') center center no-repeat transparent;
+  background-size: contain;
+}
+
+.social-media-icon-facebook {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url('/img/facebook.svg') center center no-repeat transparent;
+  background-size: contain;
+}
+
+.social-media-icon-vk {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url('/img/vk-footer.svg') center center no-repeat transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.social-media-icon-instagram {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url('/img/instagram.svg') center center no-repeat transparent;
+  background-size: contain;
+}
+
+.footer-logo {
+  position: absolute;
+  right: 176px;
+  bottom: -5px;
+}
 
 
 
