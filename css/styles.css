@@ -34,6 +34,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color: #CC9933;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -42,6 +46,11 @@ ul {
 
 a {
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color);
 }
 
 img {
@@ -66,11 +75,24 @@ html {
   min-width: 100px;
   font-size: 16px;
   line-height: 16px;
-  color: #CC9933;
+  color: var(--color);
   background-color: transparent;
-  border: 1px solid #CC9933;
+  border: 1px solid var(--color);
   border-radius: 10px;
   cursor: pointer;
+  transition-property: color, background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+.btn:hover {
+  background-color: var(--color);
+  color: #E9E9E9;
+}
+
+.btn:active {
+  transform: translateY(1px);
+  background-color: #A47312;
 }
 
 .section-header {
@@ -138,6 +160,20 @@ input[type=number]::-webkit-outer-spin-button {
   align-items: center;
 }
 
+.login-link:hover .login-link-text {
+  color: #E9C479;
+}
+
+.login-link:hover .login-icon {
+  display: inline-block;
+  margin-right: 5px;
+  height: 24px;
+  width: 24px;
+  background: url('/img/login-arrov-hover.svg') center center no-repeat transparent;
+  background-size: contain;
+  transform: translateY(-2px);
+}
+
 .login-icon {
   display: inline-block;
   margin-right: 5px;
@@ -152,7 +188,7 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
-  color: #CC9933;
+  color: var(--color);
 }
 
 .section-header-down {
@@ -208,6 +244,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .promotional-heading {
+  position: relative;
   margin-top: 0px;
   margin-bottom: 15px;
   font-size: 40px;
@@ -217,6 +254,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .promotional-heading-large {
+  position: relative;
   font-size: 60px;
   line-height: 60px;
 }
@@ -233,6 +271,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .promotional-item-maldives {
+  position: relative;
   display: inline-block;
   background: url('/img/maldives1.png');
   background-size: contain;
@@ -240,18 +279,50 @@ input[type=number]::-webkit-outer-spin-button {
   height: 258px;
 }
 
+.promotional-item-maldives::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  background: url("/img/darken-maldives.png") no-repeat transparent;
+  background-size: contain;
+  width: 573px;
+  height: 258px;
+}
+
 .promotional-item-crete {
+  position: relative;
   background: url('/img/crete1.png');
   background-size: contain;
   width: 573px;
   height: 258px;
 }
 
+.promotional-item-crete::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  background: url("/img/darken-maldives.png") no-repeat transparent;
+  background-size: contain;
+  width: 573px;
+  height: 258px;
+}
+
 .promotional-item-lux {
+  position: relative;
   background: url('/img/luxroom.png');
   background-size: contain;
   width: 573px;
   height: 540px;
+}
+
+.promotional-item-lux::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  background: url("/img/darken-lux.png") no-repeat transparent;
+  background-size: contain;
+  width: 573px;
+  height: 573px;
 }
 
 .promotional-section-small {
@@ -263,6 +334,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .promotional-price {
+  position: relative;
   margin-bottom: 47px;
   font-size: 20px;
   line-height: 1;
@@ -275,6 +347,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .promotional-link {
+  position: relative;
   margin-right: -3px;
   font-size: 16px;
   line-height: 1;
@@ -377,7 +450,12 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 20px;
   line-height: 40px;
   font-weight: 500;
-  color: #CC9933;
+  color: var(--color);
+  transition: color 0.3s ease;
+}
+
+.services-link:hover .services-link-text {
+  color: #E9C479;
 }
 
 .services-link-icon {
@@ -387,17 +465,26 @@ input[type=number]::-webkit-outer-spin-button {
   background: url('/img/arrow_right.svg') center center no-repeat transparent;
   background-size: contain;
   transform: translateY(3px);
+  transition: color 0.3s ease;
+}
+
+.services-link:hover .services-link-icon {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url('/img/arrow_right-hover.svg') center center no-repeat transparent;
+  background-size: contain;
+  transform: translateY(3px);
 }
 
 /* Benefits */
 .benefits-container {
-  margin-bottom: 70px;
+  margin-bottom: 47px;
 }
 
 .benefits-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin-top: 35px;
 }
 
@@ -405,10 +492,12 @@ input[type=number]::-webkit-outer-spin-button {
   width: 275px;
   background-color: #FFF;
   border-radius: 15px;
+  margin-bottom: 23px;
+  margin-right: 23px;
 }
 
-.benefits-item:not(:nth-child(5)):not(:nth-child(6)):not(:nth-child(7)):not(:nth-child(8)){
-  margin-bottom: 23px;
+.benefits-item:nth-child(4n) {
+  margin-right: 0px;
 }
 
 .benefits-icon {
@@ -583,13 +672,25 @@ input[type=number]::-webkit-outer-spin-button {
   color: #FFF;
 }
 
-.accommodation-showmore-text-section {
+.accommodation-showmore-link {
   position: absolute;
-  bottom: 27px;
-  right: 53px;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  right: 0px;
+}
+
+.accommodation-showmore-text {
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+  left: 0;
 }
 
 .accommodation-showmore-icon {
+  position: absolute;
+  bottom: 55px;
+  right: 35px;
   display: inline-block;
   width: 19px;
   height: 19px;
@@ -744,7 +845,11 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: #CC9933;
+  color: var(--color);
+}
+
+.contacts-link:hover {
+  color: #E9C479
 }
 
 .email-description {
@@ -767,7 +872,7 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 16px;
   line-height: 1;
   font-weight: 700;
-  color: #CC9933;
+  color: var(--color);
 }
 
 /* Footer */
@@ -811,6 +916,10 @@ input[type=number]::-webkit-outer-spin-button {
   line-height: 24px;
   font-weight: 400;
   color: #CC9933;
+}
+
+.footer-link:hover {
+  color: #E9C479;
 }
 
 .footer-user-agreement-link {
